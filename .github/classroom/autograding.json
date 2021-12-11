@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Does it print a usage statement when run without arguments?",
+      "setup": "",
+      "run": "bash final.sh",
+      "input": "",
+      "output": "Usage",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Test One: User and Process",
+      "setup": "",
+      "run": "sudo bash final.sh /run/systemd/journal/stdout",
+      "input": "",
+      "output": "systemd",
+      "comparison": "included",
+      "timeout": 20,
+      "points": 80
+    }
+  ]
+}
